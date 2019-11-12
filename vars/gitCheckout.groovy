@@ -1,4 +1,4 @@
-def call(Map stageParams) {
+def customGitCheckout(Map stageParams) {
 	checkout([
 		$class: "GitSCM",
 		branches: [[name: stageParams.branch ]],
